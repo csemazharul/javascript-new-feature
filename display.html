@@ -1,10 +1,30 @@
 <html>
-<head><script type="module" src="./app.js"></script></head>
-<body>
-<div id="display-div"></div>
+  <head>
+    <style>
+      #main-div {
+      }
+    </style>
+    <script type="module" src="./app.js"></script>
+  </head>
 
-<button id="add">ADD</button>
-<button id="sub">SUBSTRUCT</button>
+  <body>
+    <div id="main-div">
+      firstNumber :
+      <input type="number" id="first_number" /><br />
+      SecondNumber:
+      <input type="number" id="second_number" /><br />
+      Operator
+      <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <br />
+      <button id="result">result</button>
+      <br>
+      <textarea id="display" rows="4" cols="20" readonly></textarea>
+    </div>
 
-</body>
+  </body>
 </html>

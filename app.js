@@ -1,15 +1,14 @@
 import cal from './lib.js'
 
-document.getElementById('add').addEventListener('click', () => {
+document.getElementById('result').addEventListener('click', () => {
 
-   let result = cal.addNumber(5,3)
-   console.log(result)
+   let firstNumber = document.getElementById('first_number').value
+   let secondNumber = document.getElementById('second_number').value
+   let operator = document.getElementById('operator').value
+   
+   let result = cal.calculator(Number(firstNumber),operator,Number(secondNumber))
+   
+   document.getElementById('display').value=result
     
 })
 
-document.getElementById('sub').addEventListener('click', () => {
-
-    let result = cal.subNumber(5,3)
-    console.log(cal.getData)
-     
- })
